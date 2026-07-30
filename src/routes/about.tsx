@@ -39,10 +39,14 @@ function AboutPage() {
         <div className="mx-auto grid max-w-[110rem] gap-12 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[1fr_1fr] lg:gap-20 lg:px-12">
           <Reveal>
             <ImageFrame
-              ratio="3 / 4"
-              label="Lifestyle image"
-              alt="Voltrage athlete training in the gym"
+              ratio="4 / 3"
+              label="Product lineup"
+              src={lineup.src}
+              width={lineup.width}
+              height={lineup.height}
+              alt="The full Voltrage product lineup arranged in a gym setting"
             />
+
           </Reveal>
           <Reveal delay={100} className="max-w-2xl">
             {about.paragraphs.map((paragraph) => (
