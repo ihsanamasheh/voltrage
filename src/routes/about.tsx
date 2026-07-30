@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import { about } from "@/content/voltrage";
+import { lineup } from "@/content/media";
 import { ImageFrame } from "@/components/site/ImageFrame";
 import { Reveal } from "@/components/site/Reveal";
 
