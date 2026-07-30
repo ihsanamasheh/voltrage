@@ -3,6 +3,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { Instagram, Menu, X } from "lucide-react";
 
 import { brand, nav } from "@/content/voltrage";
+import { logo } from "@/content/media";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
