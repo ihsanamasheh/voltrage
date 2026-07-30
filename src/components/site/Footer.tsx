@@ -10,9 +10,16 @@ export function Footer() {
       <div className="mx-auto max-w-[110rem] px-5 py-16 sm:px-8 sm:py-20 lg:px-12">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <p className="font-display text-4xl font-extrabold tracking-[0.16em] uppercase sm:text-5xl">
-              {brand.name}
-            </p>
+            <img
+              src={logo.src}
+              width={logo.width}
+              height={logo.height}
+              alt={`${brand.name} logo`}
+              loading="lazy"
+              decoding="async"
+              className="h-9 w-auto sm:h-11"
+            />
+
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
               {brand.tagline}
             </p>
