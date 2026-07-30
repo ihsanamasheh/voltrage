@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { installChunkReloadRecovery } from "../lib/chunk-reload";
 import { Navbar } from "../components/site/Navbar";
 import { Footer } from "../components/site/Footer";
 
@@ -133,6 +134,9 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+
+  useEffect(() => installChunkReloadRecovery(), []);
+
 
   return (
     <QueryClientProvider client={queryClient}>
