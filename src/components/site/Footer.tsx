@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Instagram } from "lucide-react";
 
 import { brand, nav } from "@/content/voltrage";
+import { logo } from "@/content/media";
 
 export function Footer() {
   return (
