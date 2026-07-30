@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Instagram } from "lucide-react";
 
 import { brand, categories, home } from "@/content/voltrage";
+import { categoryMedia, lineup } from "@/content/media";
 import { ImageFrame } from "@/components/site/ImageFrame";
 import { Reveal } from "@/components/site/Reveal";
 
