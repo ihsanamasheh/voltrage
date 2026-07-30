@@ -129,7 +129,7 @@
 
 /* Fluid display type */
 @utility text-display {
-  font-size: clamp(2.75rem, 8vw, 7rem);
+  font-size: clamp(2.5rem, 6.2vw, 5.5rem);
   line-height: 0.95;
 }
 
