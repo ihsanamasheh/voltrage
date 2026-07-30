@@ -9,8 +9,8 @@ import chocolateIsolateTranslucentAsset from "@/assets/Chocolate_Whey_Protein_Is
 import strawberryIsolateAsset from "@/assets/Strawberry_Whey_Protein_Isolate.jpeg.asset.json";
 import strawberryWheyAsset from "@/assets/Strawberry_Whey_Protein.jpeg.asset.json";
 import vanillaWheyAsset from "@/assets/Vanilla_Whey_Protein.jpeg.asset.json";
-import preWorkoutAsset from "@/assets/Preworkout_crimson_fuel_series.jpeg.asset.json";
-import creatineAsset from "@/assets/Creatine_Monohydrate_saphirre_strength_series.jpeg.asset.json";
+import preWorkoutAsset from "@/assets/Preworkout_crop.jpg.asset.json";
+import creatineAsset from "@/assets/Creatine_crop.jpg.asset.json";
 
 export type Media = { src: string; width: number; height: number };
 
@@ -22,8 +22,8 @@ export const productMedia: Record<string, Media> = {
   "Classic Vanilla (5 lbs)": { src: vanillaWheyAsset.url, width: 976, height: 1084 },
   "Chocolate Fudge": { src: chocolateIsolateAsset.url, width: 976, height: 1084 },
   "Sweet Strawberry": { src: strawberryIsolateAsset.url, width: 976, height: 1084 },
-  "Voltrage Pre-Workout": { src: preWorkoutAsset.url, width: 456, height: 573 },
-  "Pure Micronized Creatine": { src: creatineAsset.url, width: 443, height: 575 },
+  "Voltrage Pre-Workout": { src: preWorkoutAsset.url, width: 456, height: 484 },
+  "Pure Micronized Creatine": { src: creatineAsset.url, width: 443, height: 491 },
 };
 
 /** Secondary detail shots shown beneath a product card. */
@@ -41,5 +41,5 @@ export const productDetailMedia: Record<string, Media & { caption: string; alt: 
 export const categoryMedia: Record<string, Media> = {
   "whey-protein": { src: vanillaWheyAsset.url, width: 976, height: 1084 },
   "whey-isolate": { src: chocolateIsolateAsset.url, width: 976, height: 1084 },
-  "pre-workout-creatine": { src: preWorkoutAsset.url, width: 456, height: 573 },
+  "pre-workout-creatine": { src: preWorkoutAsset.url, width: 456, height: 484 },
 };
