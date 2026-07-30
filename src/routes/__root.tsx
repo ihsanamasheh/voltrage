@@ -135,6 +135,9 @@ function RootShell({ children }: { children: ReactNode }) {
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
+  useEffect(() => installChunkReloadRecovery(), []);
+
+
   return (
     <QueryClientProvider client={queryClient}>
       <a
