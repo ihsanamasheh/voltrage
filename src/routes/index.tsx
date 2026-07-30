@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Instagram } from "lucide-react";
 
 import { brand, categories, home } from "@/content/voltrage";
+import { categoryMedia, lineup } from "@/content/media";
 import { ImageFrame } from "@/components/site/ImageFrame";
 import { Reveal } from "@/components/site/Reveal";
 
@@ -48,11 +49,15 @@ function Index() {
 
           <Reveal delay={120}>
             <ImageFrame
-              ratio="4 / 5"
+              ratio="4 / 3"
               priority
+              src={lineup.src}
+              width={lineup.width}
+              height={lineup.height}
               label="Hero image"
-              alt="Voltrage athlete lifestyle hero image"
+              alt="The full Voltrage product lineup: whey protein, isolate, pre-workout and creatine"
             />
+
           </Reveal>
         </div>
       </section>
@@ -100,14 +105,19 @@ function Index() {
           <ul className="mt-14 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
             {home.featured.map((name, i) => {
               const category = categories[i];
+              const media = categoryMedia[category.id];
               return (
                 <Reveal as="li" key={name} delay={i * 90}>
                   <Link to="/products" hash={category.id} className="group block">
                     <ImageFrame
                       ratio="1 / 1"
                       label={name}
+                      src={media?.src}
+                      width={media?.width}
+                      height={media?.height}
                       alt={`${name} by Voltrage`}
                     />
+
                     <h3 className="mt-6 font-display text-xl font-bold uppercase">{name}</h3>
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                       {category.intro}

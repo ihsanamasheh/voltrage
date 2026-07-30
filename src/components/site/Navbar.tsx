@@ -3,6 +3,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { Instagram, Menu, X } from "lucide-react";
 
 import { brand, nav } from "@/content/voltrage";
+import { logo } from "@/content/media";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -38,11 +39,20 @@ export function Navbar() {
       <div className="mx-auto grid h-16 max-w-[110rem] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:h-20 sm:px-8 lg:px-12">
         <Link
           to="/"
-          className="min-w-0 font-display text-lg font-extrabold tracking-[0.2em] uppercase"
+          className="min-w-0"
           aria-label={`${brand.name} — home`}
         >
-          {brand.name}
+          <img
+            src={logo.src}
+            width={logo.width}
+            height={logo.height}
+            alt=""
+            aria-hidden="true"
+            decoding="async"
+            className="h-6 w-auto sm:h-7"
+          />
         </Link>
+
 
         <nav aria-label="Primary" className="hidden items-center gap-9 md:flex">
           {nav.map((item) => (

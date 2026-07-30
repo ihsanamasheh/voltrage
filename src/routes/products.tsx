@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import { categories } from "@/content/voltrage";
+import { productDetailMedia, productMedia } from "@/content/media";
 import { ImageFrame } from "@/components/site/ImageFrame";
 import { Reveal } from "@/components/site/Reveal";
 
@@ -55,17 +56,42 @@ function ProductsPage() {
             </Reveal>
 
             <ul className="mt-14 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-              {category.products.map((product, i) => (
-                <Reveal as="li" key={product.name} delay={i * 90} className="group">
-                  <ImageFrame ratio="4 / 5" label={product.name} alt={product.imageAlt} />
-                  <h3 className="mt-6 font-display text-xl leading-tight font-bold uppercase">
-                    {product.name}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                    {product.description}
-                  </p>
-                </Reveal>
-              ))}
+              {category.products.map((product, i) => {
+                const media = productMedia[product.name];
+                const detail = productDetailMedia[product.name];
+                return (
+                  <Reveal as="li" key={product.name} delay={i * 90} className="group">
+                    <ImageFrame
+                      ratio="4 / 5"
+                      label={product.name}
+                      src={media?.src}
+                      width={media?.width}
+                      height={media?.height}
+                      alt={product.imageAlt}
+                    />
+                    <h3 className="mt-6 font-display text-xl leading-tight font-bold uppercase">
+                      {product.name}
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+                      {product.description}
+                    </p>
+                    {detail && (
+                      <figure className="mt-8">
+                        <ImageFrame
+                          ratio="4 / 5"
+                          label={detail.caption}
+                          src={detail.src}
+                          width={detail.width}
+                          height={detail.height}
+                          alt={detail.alt}
+                        />
+                        <figcaption className="eyebrow mt-4">{detail.caption}</figcaption>
+                      </figure>
+                    )}
+                  </Reveal>
+                );
+              })}
+
             </ul>
           </div>
         </section>
