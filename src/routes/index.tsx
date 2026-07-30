@@ -105,14 +105,19 @@ function Index() {
           <ul className="mt-14 grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
             {home.featured.map((name, i) => {
               const category = categories[i];
+              const media = categoryMedia[category.id];
               return (
                 <Reveal as="li" key={name} delay={i * 90}>
                   <Link to="/products" hash={category.id} className="group block">
                     <ImageFrame
                       ratio="1 / 1"
                       label={name}
+                      src={media?.src}
+                      width={media?.width}
+                      height={media?.height}
                       alt={`${name} by Voltrage`}
                     />
+
                     <h3 className="mt-6 font-display text-xl font-bold uppercase">{name}</h3>
                     <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                       {category.intro}
