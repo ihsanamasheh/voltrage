@@ -49,11 +49,15 @@ function Index() {
 
           <Reveal delay={120}>
             <ImageFrame
-              ratio="4 / 5"
+              ratio="4 / 3"
               priority
+              src={lineup.src}
+              width={lineup.width}
+              height={lineup.height}
               label="Hero image"
-              alt="Voltrage athlete lifestyle hero image"
+              alt="The full Voltrage product lineup: whey protein, isolate, pre-workout and creatine"
             />
+
           </Reveal>
         </div>
       </section>
