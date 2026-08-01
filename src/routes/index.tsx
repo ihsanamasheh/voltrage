@@ -29,7 +29,7 @@ function Index() {
     <>
       {/* Hero */}
       <section className="mx-auto max-w-[110rem] px-5 pt-14 pb-20 sm:px-8 sm:pt-20 sm:pb-28 lg:px-12">
-        <div className="grid items-end gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
+        <div className="grid items-end gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:gap-16">
           <Reveal>
             <p className="eyebrow">Sports Nutrition</p>
             <h1 className="text-display mt-6 font-display font-extrabold uppercase">
@@ -47,7 +47,7 @@ function Index() {
             </Link>
           </Reveal>
 
-          <Reveal delay={120}>
+          <Reveal delay={120} className="lg:ml-auto lg:w-full lg:max-w-[26rem]">
             <ImageFrame
               ratio="4 / 3"
               priority
