@@ -168,6 +168,20 @@
   }
 }
 
+/* Persistent marker for the current page's nav link */
+@utility nav-active {
+  color: var(--color-accent);
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.45em;
+    height: 2px;
+    width: 100%;
+    background: var(--color-accent);
+  }
+}
+
 /* Quiet entrance */
 @utility reveal {
   opacity: 0;

@@ -60,7 +60,10 @@ export function Navbar() {
               key={item.to}
               to={item.to}
               className="link-underline text-sm text-muted-foreground transition-colors hover:text-foreground"
-              activeProps={{ className: "text-foreground" }}
+              activeProps={{
+                className: "nav-active hover:text-accent",
+                "aria-current": "page",
+              }}
               activeOptions={{ exact: item.to === "/" }}
             >
               {item.label}
@@ -103,8 +106,11 @@ export function Navbar() {
               <Link
                 key={item.to}
                 to={item.to}
-                className="border-b border-hairline py-5 font-display text-3xl font-bold"
-                activeProps={{ className: "text-accent" }}
+                className="border-b border-hairline py-5 font-display text-3xl font-bold text-muted-foreground"
+                activeProps={{
+                  className: "text-accent border-accent",
+                  "aria-current": "page",
+                }}
                 activeOptions={{ exact: item.to === "/" }}
               >
                 {item.label}
