@@ -60,7 +60,10 @@ export function Navbar() {
               key={item.to}
               to={item.to}
               className="link-underline text-sm text-muted-foreground transition-colors hover:text-foreground"
-              activeProps={{ className: "text-foreground" }}
+              activeProps={{
+                className: "nav-active hover:text-accent",
+                "aria-current": "page",
+              }}
               activeOptions={{ exact: item.to === "/" }}
             >
               {item.label}
