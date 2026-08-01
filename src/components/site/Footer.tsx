@@ -17,7 +17,7 @@ export function Footer() {
               alt={`${brand.name} logo`}
               loading="lazy"
               decoding="async"
-              className="h-9 w-auto sm:h-11"
+              className="h-11 w-auto sm:h-14"
             />
 
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">

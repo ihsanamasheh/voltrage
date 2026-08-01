@@ -147,7 +147,7 @@ function RootComponent() {
         Skip to content
       </a>
       <Navbar />
-      <main id="main" className="min-h-dvh pt-16 sm:pt-20">
+      <main id="main" className="min-h-dvh pt-[4.5rem] sm:pt-[5.5rem]">
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
       </main>

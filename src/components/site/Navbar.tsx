@@ -36,7 +36,7 @@ export function Navbar() {
           : "border-b border-transparent",
       )}
     >
-      <div className="mx-auto grid h-16 max-w-[110rem] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:h-20 sm:px-8 lg:px-12">
+      <div className="mx-auto grid h-[4.5rem] max-w-[110rem] grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 sm:h-[5.5rem] sm:px-8 lg:px-12">
         <Link
           to="/"
           className="min-w-0"
@@ -49,7 +49,7 @@ export function Navbar() {
             alt=""
             aria-hidden="true"
             decoding="async"
-            className="h-6 w-auto sm:h-7"
+            className="h-8 w-auto sm:h-10"
           />
         </Link>
 
@@ -96,7 +96,7 @@ export function Navbar() {
       {open && (
         <div
           id="mobile-menu"
-          className="fixed inset-x-0 top-16 bottom-0 z-40 flex flex-col justify-between bg-background px-5 pt-8 pb-10 md:hidden"
+          className="fixed inset-x-0 top-[4.5rem] bottom-0 z-40 flex flex-col justify-between bg-background px-5 pt-8 pb-10 md:hidden"
         >
           <nav aria-label="Mobile" className="flex flex-col">
             {nav.map((item) => (
