@@ -1,10 +1,10 @@
 # Contact form: email instead of database
 
-Replace the database-backed contact form with a direct email to the admin inbox (amashehihsan73@gmail.com). Nothing is stored.
+Replace the database-backed contact form with a direct email to the admin inbox ([amashehihsan73@gmail.com](mailto:amashehihsan73@gmail.com)). Nothing is stored.
 
 ## What changes
 
-- The contact form keeps its exact look, fields, validation, and success/error states.
+- The contact form keeps its exact loo k, fields, validation, and success/error states.
 - On submit, the server validates the input and sends a formatted email to the admin inbox with the sender's name, email, subject, and message. The sender's address is set as reply-to so replies go straight back to them.
 - No message is written to or read from the database.
 
