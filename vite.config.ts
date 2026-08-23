@@ -18,7 +18,18 @@ function serverEntryShimPlugin() {
     closeBundle() {
       writeFileSync(
         "dist/server/server.js",
-        'export { default } from "./index.mjs";\n',
+        [
+          'import worker from "./index.mjs";',
+          "",
+          "// srvx's NodeRequest exposes a getter-only `ip`, but the Cloudflare-module",
+          "// runtime assigns `req.ip` — hand it a plain Request copy instead.",
+          "export default {",
+          "  fetch(request, env, ctx) {",
+          "    return worker.fetch(new Request(request), env, ctx);",
+          "  },",
+          "};",
+          "",
+        ].join("\n"),
       );
     },
   };
