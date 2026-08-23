@@ -84,16 +84,6 @@ function ContactPage() {
             <ul className="mt-8 space-y-6">
               <li>
                 <a
-                  href={`tel:${brand.phone}`}
-                  className="group inline-flex min-h-11 items-center gap-4 font-display text-xl font-bold transition-colors hover:text-accent sm:text-2xl"
-                >
-                  <Phone className="size-5 shrink-0 text-muted-foreground" aria-hidden="true" />
-                  <span className="sr-only">Telephone: </span>
-                  {brand.phone}
-                </a>
-              </li>
-              <li>
-                <a
                   href={`mailto:${brand.email}`}
                   className="group inline-flex min-h-11 items-center gap-4 font-display text-xl font-bold break-all transition-colors hover:text-accent sm:text-2xl"
                 >
