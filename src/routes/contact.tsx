@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
-import { Instagram, Mail, Phone } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 
 import { brand, contact } from "@/content/voltrage";
 import { Reveal } from "@/components/site/Reveal";
@@ -82,16 +82,6 @@ function ContactPage() {
           <Reveal>
             <h2 className="eyebrow">Direct Channels</h2>
             <ul className="mt-8 space-y-6">
-              <li>
-                <a
-                  href={`tel:${brand.phone}`}
-                  className="group inline-flex min-h-11 items-center gap-4 font-display text-xl font-bold transition-colors hover:text-accent sm:text-2xl"
-                >
-                  <Phone className="size-5 shrink-0 text-muted-foreground" aria-hidden="true" />
-                  <span className="sr-only">Telephone: </span>
-                  {brand.phone}
-                </a>
-              </li>
               <li>
                 <a
                   href={`mailto:${brand.email}`}

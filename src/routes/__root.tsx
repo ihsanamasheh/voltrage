@@ -106,7 +106,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           name: "Voltrage",
           description: "High-performance sports nutrition for modern athletes.",
           email: "testuser@voltrage.com",
-          telephone: "00962792466866",
           sameAs: ["https://instagram.com/testuser"],
         }),
       },

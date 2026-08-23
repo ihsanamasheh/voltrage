@@ -46,14 +46,6 @@ export function Footer() {
             <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
               <li>
                 <a
-                  href={`tel:${brand.phone}`}
-                  className="link-underline inline-flex min-h-11 items-center transition-colors hover:text-foreground"
-                >
-                  {brand.phone}
-                </a>
-              </li>
-              <li>
-                <a
                   href={`mailto:${brand.email}`}
                   className="link-underline inline-flex min-h-11 items-center transition-colors hover:text-foreground"
                 >

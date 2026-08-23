@@ -8,7 +8,7 @@ export const brand = {
   tagline: "Built for the Next Generation of Performance",
   instagram: "@testuser",
   instagramUrl: "https://instagram.com/testuser",
-  phone: "00962792466866",
+  
   email: "testuser@voltrage.com",
 } as const;
 
