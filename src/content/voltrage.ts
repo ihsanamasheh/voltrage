@@ -59,6 +59,12 @@ export const categories: Category[] = [
         imageAlt: "Voltrage Decadent Chocolate 100% Whey Protein, 5 lbs tub",
       },
       {
+        name: "Cookies & Cream (5 lbs)",
+        description:
+          "The ultimate cheat-day flavor, made guilt-free. Packed with real cookie crumbles and a creamy, velvety finish that makes hitting your macros feel like a treat.",
+        imageAlt: "Voltrage Cookies & Cream 100% Whey Protein, 5 lbs tub",
+      },
+      {
         name: "Fresh Strawberry (5 lbs)",
         description:
           "Refreshingly sweet and clean. Blends effortlessly into a silky, fruit-packed shake that tastes like summer in a cup.",
