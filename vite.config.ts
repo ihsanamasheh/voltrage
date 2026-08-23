@@ -31,7 +31,7 @@ function serverEntryShimPlugin() {
           "      headers: request.headers,",
           "      ...(hasBody ? { body: request.body, duplex: \"half\" } : {}),",
           "    });",
-          "    return worker.fetch(plain, env, ctx);",
+          "    return worker.fetch(plain, env ?? {}, ctx ?? {});",
           "  },",
           "};",
           "",
