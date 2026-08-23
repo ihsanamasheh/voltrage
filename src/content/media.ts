@@ -4,7 +4,7 @@
  */
 import logoAsset from "@/assets/Voltrage_Logo_mark.png.asset.json";
 import lineupAsset from "@/assets/Product_Lineup.jpeg.asset.json";
-import chocolateWheyAsset from "@/assets/Chocolate_Whey_Protein.jpeg.asset.json";
+import chocolateWheyAsset from "@/assets/Chocolate_Whey_Protein_reframed.jpg.asset.json";
 import cookiesAndCreamAsset from "@/assets/Cookies_and_cream_whey_protein.jpeg.asset.json";
 import chocolateIsolateAsset from "@/assets/Chocolate_Whey_Protein_Isolate-2.jpeg.asset.json";
 import chocolateIsolateTranslucentAsset from "@/assets/Chocolate_Whey_Protein_Isolate_translucent_option.jpeg.asset.json";
@@ -20,7 +20,7 @@ export const logo: Media = { src: logoAsset.url, width: 1091, height: 351 };
 export const lineup: Media = { src: lineupAsset.url, width: 912, height: 663 };
 
 export const productMedia: Record<string, Media> = {
-  "Decadent Chocolate (5 lbs)": { src: chocolateWheyAsset.url, width: 844, height: 1264 },
+  "Decadent Chocolate (5 lbs)": { src: chocolateWheyAsset.url, width: 848, height: 1264 },
   "Cookies & Cream (5 lbs)": { src: cookiesAndCreamAsset.url, width: 844, height: 1231 },
   "Fresh Strawberry (5 lbs)": { src: strawberryWheyAsset.url, width: 844, height: 1234 },
   "Classic Vanilla (5 lbs)": { src: vanillaWheyAsset.url, width: 844, height: 1233 },
