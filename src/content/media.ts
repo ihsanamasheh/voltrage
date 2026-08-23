@@ -20,7 +20,7 @@ export const logo: Media = { src: logoAsset.url, width: 1091, height: 351 };
 export const lineup: Media = { src: lineupAsset.url, width: 912, height: 663 };
 
 export const productMedia: Record<string, Media> = {
-  "Decadent Chocolate (5 lbs)": { src: chocolateWheyAsset.url, width: 1102, height: 1378 },
+  "Decadent Chocolate (5 lbs)": { src: chocolateWheyAsset.url, width: 1146, height: 1432 },
   "Cookies & Cream (5 lbs)": { src: cookiesAndCreamAsset.url, width: 844, height: 1231 },
   "Fresh Strawberry (5 lbs)": { src: strawberryWheyAsset.url, width: 844, height: 1234 },
   "Classic Vanilla (5 lbs)": { src: vanillaWheyAsset.url, width: 844, height: 1233 },
