@@ -34,7 +34,7 @@ function serverEntryShimPlugin() {
           "    return worker.fetch(",
           "      plain,",
           "      env ?? {},",
-          "      ctx ?? { context: { waitUntil: () => {} } },",
+          "      ctx ?? { waitUntil: () => {} },",
           "    );",
           "  },",
           "};",
