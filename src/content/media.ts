@@ -5,12 +5,12 @@
 import logoAsset from "@/assets/Voltrage_Logo_mark.png.asset.json";
 import lineupAsset from "@/assets/Product_Lineup.jpeg.asset.json";
 import chocolateWheyAsset from "@/assets/Chocolate_Whey_Protein_framed.jpg.asset.json";
-import cookiesAndCreamAsset from "@/assets/Cookies_and_cream_whey_protein.jpeg.asset.json";
+import cookiesAndCreamAsset from "@/assets/Cookies_and_cream_whey_protein.jpg.asset.json";
 import chocolateIsolateAsset from "@/assets/Chocolate_Whey_Protein_Isolate-2.jpeg.asset.json";
 import chocolateIsolateTranslucentAsset from "@/assets/Chocolate_Whey_Protein_Isolate_translucent_option.jpeg.asset.json";
 import strawberryIsolateAsset from "@/assets/Strawberry_Whey_Protein_Isolate-2.jpeg.asset.json";
-import strawberryWheyAsset from "@/assets/Strawberry_Whey_Protein-2.jpeg.asset.json";
-import vanillaWheyAsset from "@/assets/Vanilla_Whey_Protein-2.jpeg.asset.json";
+import strawberryWheyAsset from "@/assets/Strawberry_Whey_Protein.jpg.asset.json";
+import vanillaWheyAsset from "@/assets/Vanilla_Whey_Protein.jpg.asset.json";
 import preWorkoutAsset from "@/assets/Preworkout_crop.jpg.asset.json";
 import creatineAsset from "@/assets/Creatine_crop.jpg.asset.json";
 
@@ -21,9 +21,9 @@ export const lineup: Media = { src: lineupAsset.url, width: 912, height: 663 };
 
 export const productMedia: Record<string, Media> = {
   "Decadent Chocolate (5 lbs)": { src: chocolateWheyAsset.url, width: 1146, height: 1432 },
-  "Cookies & Cream (5 lbs)": { src: cookiesAndCreamAsset.url, width: 844, height: 1231 },
-  "Fresh Strawberry (5 lbs)": { src: strawberryWheyAsset.url, width: 844, height: 1234 },
-  "Classic Vanilla (5 lbs)": { src: vanillaWheyAsset.url, width: 844, height: 1233 },
+  "Cookies & Cream (5 lbs)": { src: cookiesAndCreamAsset.url, width: 1146, height: 1432 },
+  "Fresh Strawberry (5 lbs)": { src: strawberryWheyAsset.url, width: 1146, height: 1432 },
+  "Classic Vanilla (5 lbs)": { src: vanillaWheyAsset.url, width: 1146, height: 1432 },
   "Chocolate Fudge": { src: chocolateIsolateAsset.url, width: 844, height: 1234 },
   "Sweet Strawberry": { src: strawberryIsolateAsset.url, width: 844, height: 1233 },
   "Voltrage Pre-Workout": { src: preWorkoutAsset.url, width: 456, height: 484 },
@@ -43,7 +43,7 @@ export const productDetailMedia: Record<string, Media & { caption: string; alt: 
 
 /** Representative shot for each category preview on the home page. */
 export const categoryMedia: Record<string, Media> = {
-  "whey-protein": { src: vanillaWheyAsset.url, width: 844, height: 1233 },
+  "whey-protein": { src: vanillaWheyAsset.url, width: 1146, height: 1432 },
   "whey-isolate": { src: chocolateIsolateAsset.url, width: 844, height: 1234 },
   "pre-workout-creatine": { src: preWorkoutAsset.url, width: 456, height: 484 },
 };
