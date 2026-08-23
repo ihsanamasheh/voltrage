@@ -16,6 +16,7 @@ function serverEntryShimPlugin() {
     name: "voltrage:server-entry-shim",
     apply: "build" as const,
     closeBundle() {
+      writeFileSync("dist/package.json", '{ "type": "module" }\n');
       writeFileSync(
         "dist/server/server.js",
         [
