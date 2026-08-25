@@ -4,6 +4,7 @@
  */
 import logoAsset from "@/assets/Voltrage_Logo_mark.png.asset.json";
 import lineupAsset from "@/assets/Product_Lineup_transparent.png.asset.json";
+import lineupLifestyleAsset from "@/assets/product-lineup-lifestyle.png.asset.json";
 import chocolateWheyAsset from "@/assets/Chocolate_Whey_Protein_framed.jpg.asset.json";
 import cookiesAndCreamAsset from "@/assets/Cookies_and_cream_whey_protein.jpg.asset.json";
 import chocolateIsolateAsset from "@/assets/Chocolate_Whey_Protein_Isolate-2.jpeg.asset.json";
