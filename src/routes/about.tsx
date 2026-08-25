@@ -39,12 +39,13 @@ function AboutPage() {
         <div className="mx-auto grid max-w-[110rem] gap-12 px-5 py-16 sm:px-8 sm:py-24 lg:grid-cols-[1fr_1fr] lg:gap-20 lg:px-12">
           <Reveal>
             <ImageFrame
-              ratio="4 / 3"
+              ratio="1640 / 959"
               label="Product lineup"
               src={lineup.src}
               width={lineup.width}
               height={lineup.height}
-              alt="The full Voltrage product lineup arranged in a gym setting"
+              alt="The full Voltrage product lineup on a marble surface"
+              frameless
             />
 
           </Reveal>
