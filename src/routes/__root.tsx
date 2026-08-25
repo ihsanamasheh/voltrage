@@ -104,7 +104,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@context": "https://schema.org",
           "@type": "Organization",
           name: "Voltrage",
-          description: "High-performance sports nutrition for modern athletes.",
+          description:
+            "Premium sports nutrition for athletes: whey protein, isolate, pre-workout and creatine. Clean ingredients, no fillers, no hype — elite fuel.",
           email: "info@vrsupplements.com",
           sameAs: ["https://instagram.com/testuser"],
         }),
