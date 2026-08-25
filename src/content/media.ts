@@ -3,7 +3,7 @@
  * Keyed by the product names in `src/content/voltrage.ts`.
  */
 import logoAsset from "@/assets/Voltrage_Logo_mark.png.asset.json";
-import lineupAsset from "@/assets/Product_Lineup_transparent.png.asset.json";
+import lineupAsset from "@/assets/product-lineup-full.png.asset.json";
 import lineupLifestyleAsset from "@/assets/product-lineup-lifestyle.png.asset.json";
 import chocolateWheyAsset from "@/assets/Chocolate_Whey_Protein_framed.jpg.asset.json";
 import cookiesAndCreamAsset from "@/assets/Cookies_and_cream_whey_protein.jpg.asset.json";
@@ -18,7 +18,7 @@ import creatineAsset from "@/assets/Creatine_crop.jpg.asset.json";
 export type Media = { src: string; width: number; height: number };
 
 export const logo: Media = { src: logoAsset.url, width: 1091, height: 351 };
-export const lineup: Media = { src: lineupAsset.url, width: 1602, height: 735 };
+export const lineup: Media = { src: lineupAsset.url, width: 1640, height: 959 };
 export const lineupLifestyle: Media = { src: lineupLifestyleAsset.url, width: 1640, height: 959 };
 
 export const productMedia: Record<string, Media> = {
