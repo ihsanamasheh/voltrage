@@ -13,10 +13,18 @@ export type ContactInput = z.infer<typeof contactSchema>;
 export const submitContactMessage = createServerFn({ method: "POST" })
   .inputValidator((input: unknown) => contactSchema.parse(input))
   .handler(async ({ data }) => {
-    const { sendContactEmail } = await import("./contact-email.server");
+    const { sendTemplateEmail } = await import("./email-templates/send-email");
 
     try {
-      await sendContactEmail(data);
+      const result = await sendTemplateEmail("contact-message", "", {
+        templateData: data,
+        idempotencyKey: `contact-message-${data.email}-${Date.now()}`,
+        replyTo: data.email,
+      });
+
+      if (!result.sent) {
+        console.warn("[contact] email not sent", result.reason);
+      }
     } catch (error) {
       console.error("[contact] email send failed", error);
       throw new Error("We couldn't send your message. Please try again.");
