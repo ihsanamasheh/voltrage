@@ -14,6 +14,7 @@ export function ImageFrame({
   priority = false,
   width,
   height,
+  frameless = false,
 }: {
   ratio?: string;
   label: string;
@@ -23,12 +24,16 @@ export function ImageFrame({
   priority?: boolean;
   width?: number;
   height?: number;
+  /** Transparent-subject mode: no frame, no crop, contact shadow only. */
+  frameless?: boolean;
 }) {
   return (
     <div
       className={cn(
-        "group relative overflow-hidden bg-surface",
-        "before:pointer-events-none before:absolute before:inset-0 before:border before:border-hairline",
+        "group relative overflow-hidden",
+        frameless
+          ? "bg-transparent"
+          : "bg-surface before:pointer-events-none before:absolute before:inset-0 before:border before:border-hairline",
         className,
       )}
       style={{ aspectRatio: ratio }}
@@ -42,7 +47,12 @@ export function ImageFrame({
           loading={priority ? "eager" : "lazy"}
           decoding="async"
           fetchPriority={priority ? "high" : "auto"}
-          className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+          className={cn(
+            "h-full w-full transition-transform duration-700 ease-out group-hover:scale-[1.03]",
+            frameless
+              ? "object-contain object-bottom [filter:drop-shadow(0_28px_38px_rgba(0,0,0,0.55))]"
+              : "object-cover",
+          )}
         />
       ) : (
         <div
