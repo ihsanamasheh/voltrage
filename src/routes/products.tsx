@@ -5,9 +5,9 @@ import { productDetailMedia, productMedia } from "@/content/media";
 import { ImageFrame } from "@/components/site/ImageFrame";
 import { Reveal } from "@/components/site/Reveal";
 
-const title = "Our Products — Voltrage Protein, Isolate & Pre-Workout";
+const title = "Our Products — Voltrage Whey Protein, Isolate & Pre-Workout";
 const description =
-  "Explore Voltrage: 100% Whey Protein, Pure Whey Isolate, and Pre-Workout & Creatine, built for recovery, lean gains, and raw power.";
+  "Explore Voltrage whey protein, pure whey isolate, pre-workout and creatine. Clean formulas for recovery, lean gains and raw power.";
 
 export const Route = createFileRoute("/products")({
   head: () => ({

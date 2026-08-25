@@ -6,9 +6,9 @@ import { categoryMedia, lineupLifestyle } from "@/content/media";
 import { ImageFrame } from "@/components/site/ImageFrame";
 import { Reveal } from "@/components/site/Reveal";
 
-const title = "Voltrage — Premium Protein & Sports Nutrition";
+const title = "Voltrage — Premium Whey Protein & Sports Nutrition";
 const description =
-  "High-performance sports nutrition engineered for modern athletes: whey protein, pure whey isolate, pre-workout and creatine.";
+  "Premium sports nutrition for athletes: whey protein, isolate, pre-workout and creatine. Clean ingredients, no fillers, no hype — elite fuel.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

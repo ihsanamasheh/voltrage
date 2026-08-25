@@ -5,9 +5,9 @@ import { lineup } from "@/content/media";
 import { ImageFrame } from "@/components/site/ImageFrame";
 import { Reveal } from "@/components/site/Reveal";
 
-const title = "About Voltrage — Built for the Next Generation";
+const title = "About Voltrage — Premium Sports Nutrition Brand";
 const description =
-  "Voltrage blends clean, premium-grade ingredients with bold, contemporary design. No fillers. No hype. Just elite fuel.";
+  "Learn about Voltrage: premium-grade sports nutrition built for modern athletes. No fillers, no hype — just clean, elite fuel.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
