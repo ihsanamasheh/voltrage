@@ -7,9 +7,9 @@ import { brand, contact } from "@/content/voltrage";
 import { Reveal } from "@/components/site/Reveal";
 import { contactSchema, submitContactMessage } from "@/lib/contact.functions";
 
-const title = "Contact Voltrage — Product, Order & Wholesale Support";
+const title = "Contact Voltrage — Product & Order Support";
 const description =
-  "Questions about Voltrage products, your order, or wholesale opportunities? Call, email, or send us a message.";
+  "Get in touch with Voltrage for product questions, orders or wholesale opportunities. Email or message us — we’re here to help.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
