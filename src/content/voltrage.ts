@@ -9,7 +9,7 @@ export const brand = {
   instagram: "@testuser",
   instagramUrl: "https://instagram.com/testuser",
   
-  email: "testuser@voltrage.com",
+  email: "info@vrsupplements.com",
 } as const;
 
 export const nav = [
