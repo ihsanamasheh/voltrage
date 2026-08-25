@@ -95,7 +95,7 @@ export const template = {
   displayName: "Contact form message",
   subject: (data: Record<string, unknown>) =>
     `[Voltrage] ${(data["subject"] as string) ?? "Contact"} — ${(data["name"] as string) ?? "Website visitor"}`,
-  to: "m.ghanayem@outlook.com",
+  to: "info@vrsupplements.com",
   previewData: {
     name: "Alex Rivera",
     email: "alex@example.com",
