@@ -127,7 +127,7 @@ function Index() {
                 <Reveal as="li" key={name} delay={i * 90}>
                   <Link to="/products" hash={category.id} className="group block">
                     <ImageFrame
-                      ratio="1 / 1"
+                      ratio="4 / 5"
                       label={name}
                       src={media?.src}
                       width={media?.width}
