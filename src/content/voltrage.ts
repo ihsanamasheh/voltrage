@@ -6,8 +6,8 @@
 export const brand = {
   name: "Voltrage",
   tagline: "Built for the Next Generation of Performance",
-  instagram: "@testuser",
-  instagramUrl: "https://instagram.com/testuser",
+  instagram: "@vrnutrition",
+  instagramUrl: "https://www.instagram.com/vrnutrition/",
   
   email: "info@vrsupplements.com",
 } as const;
