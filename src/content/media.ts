@@ -19,6 +19,7 @@ export type Media = { src: string; width: number; height: number };
 
 export const logo: Media = { src: logoAsset.url, width: 1091, height: 351 };
 export const lineup: Media = { src: lineupAsset.url, width: 1602, height: 735 };
+export const lineupLifestyle: Media = { src: lineupLifestyleAsset.url, width: 1640, height: 959 };
 
 export const productMedia: Record<string, Media> = {
   "Decadent Chocolate (5 lbs)": { src: chocolateWheyAsset.url, width: 1146, height: 1432 },
