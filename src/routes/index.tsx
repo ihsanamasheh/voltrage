@@ -57,7 +57,7 @@ function Index() {
         </div>
 
         <div className="relative z-10 mx-auto max-w-[110rem] px-5 py-24 sm:px-8 sm:py-32 lg:px-12 lg:py-44">
-          <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.35fr_0.65fr]">
             <Reveal>
               <p className="eyebrow">Sports Nutrition</p>
               <h1 className="text-display mt-6 font-display font-extrabold uppercase">
