@@ -3,7 +3,7 @@
  * Keyed by the product names in `src/content/voltrage.ts`.
  */
 import logoAsset from "@/assets/Voltrage_Logo_mark.png.asset.json";
-import lineupAsset from "@/assets/Product_Lineup.jpeg.asset.json";
+import lineupAsset from "@/assets/Product_Lineup.png.asset.json";
 import chocolateWheyAsset from "@/assets/Chocolate_Whey_Protein_framed.jpg.asset.json";
 import cookiesAndCreamAsset from "@/assets/Cookies_and_cream_whey_protein.jpg.asset.json";
 import chocolateIsolateAsset from "@/assets/Chocolate_Whey_Protein_Isolate-2.jpeg.asset.json";
@@ -17,7 +17,7 @@ import creatineAsset from "@/assets/Creatine_crop.jpg.asset.json";
 export type Media = { src: string; width: number; height: number };
 
 export const logo: Media = { src: logoAsset.url, width: 1091, height: 351 };
-export const lineup: Media = { src: lineupAsset.url, width: 912, height: 663 };
+export const lineup: Media = { src: lineupAsset.url, width: 1650, height: 953 };
 
 export const productMedia: Record<string, Media> = {
   "Decadent Chocolate (5 lbs)": { src: chocolateWheyAsset.url, width: 1146, height: 1432 },
