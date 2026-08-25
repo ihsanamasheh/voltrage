@@ -4,6 +4,7 @@
  */
 import logoAsset from "@/assets/Voltrage_Logo_mark.png.asset.json";
 import lineupAsset from "@/assets/Product_Lineup_transparent.png.asset.json";
+import lineupLifestyleAsset from "@/assets/product-lineup-lifestyle.png.asset.json";
 import chocolateWheyAsset from "@/assets/Chocolate_Whey_Protein_framed.jpg.asset.json";
 import cookiesAndCreamAsset from "@/assets/Cookies_and_cream_whey_protein.jpg.asset.json";
 import chocolateIsolateAsset from "@/assets/Chocolate_Whey_Protein_Isolate-2.jpeg.asset.json";
@@ -18,6 +19,7 @@ export type Media = { src: string; width: number; height: number };
 
 export const logo: Media = { src: logoAsset.url, width: 1091, height: 351 };
 export const lineup: Media = { src: lineupAsset.url, width: 1602, height: 735 };
+export const lineupLifestyle: Media = { src: lineupLifestyleAsset.url, width: 1640, height: 959 };
 
 export const productMedia: Record<string, Media> = {
   "Decadent Chocolate (5 lbs)": { src: chocolateWheyAsset.url, width: 1146, height: 1432 },

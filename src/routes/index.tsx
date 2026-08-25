@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Instagram } from "lucide-react";
 
 import { brand, categories, home } from "@/content/voltrage";
-import { categoryMedia, lineup } from "@/content/media";
+import { categoryMedia, lineupLifestyle } from "@/content/media";
 import { ImageFrame } from "@/components/site/ImageFrame";
 import { Reveal } from "@/components/site/Reveal";
 
@@ -28,37 +28,54 @@ function Index() {
   return (
     <>
       {/* Hero */}
-      <section className="mx-auto max-w-[110rem] px-5 pt-14 pb-20 sm:px-8 sm:pt-20 sm:pb-28 lg:px-12">
-        <div className="grid items-end gap-10 lg:grid-cols-[1.35fr_0.65fr] lg:gap-16">
-          <Reveal>
-            <p className="eyebrow">Sports Nutrition</p>
-            <h1 className="text-display mt-6 font-display font-extrabold uppercase">
-              {home.headline}
-            </h1>
-            <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              {home.subheadline}
-            </p>
-            <Link
-              to="/products"
-              className="mt-10 inline-flex min-h-12 items-center gap-3 bg-accent px-7 text-sm font-bold tracking-wide text-accent-foreground uppercase transition-transform duration-300 hover:-translate-y-0.5"
-            >
-              {home.cta}
-              <ArrowRight className="size-4" aria-hidden="true" />
-            </Link>
-          </Reveal>
+      <section className="relative overflow-hidden">
+        {/* Translucent product lineup background */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={lineupLifestyle.src}
+            alt="The full Voltrage product lineup: whey protein, isolate, pre-workout and creatine"
+            width={lineupLifestyle.width}
+            height={lineupLifestyle.height}
+            className="absolute inset-y-0 right-0 h-full w-full object-cover object-center opacity-[0.35] lg:w-[80%]"
+            loading="eager"
+            decoding="async"
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(90deg, var(--background) 0%, var(--background) 35%, transparent 70%)",
+            }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "linear-gradient(180deg, var(--background) 0%, transparent 30%, transparent 70%, var(--background) 100%)",
+            }}
+          />
+        </div>
 
-          <Reveal delay={120} className="lg:ml-auto lg:w-full lg:max-w-[26rem]">
-            <ImageFrame
-              ratio="4 / 3"
-              priority
-              src={lineup.src}
-              width={lineup.width}
-              height={lineup.height}
-              label="Hero image"
-              alt="The full Voltrage product lineup: whey protein, isolate, pre-workout and creatine"
-            />
-
-          </Reveal>
+        <div className="relative z-10 mx-auto max-w-[110rem] px-5 py-24 sm:px-8 sm:py-32 lg:px-12 lg:py-44">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+            <Reveal>
+              <p className="eyebrow">Sports Nutrition</p>
+              <h1 className="text-display mt-6 font-display font-extrabold uppercase">
+                {home.headline}
+              </h1>
+              <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+                {home.subheadline}
+              </p>
+              <Link
+                to="/products"
+                className="mt-10 inline-flex min-h-12 items-center gap-3 bg-accent px-7 text-sm font-bold tracking-wide text-accent-foreground uppercase transition-transform duration-300 hover:-translate-y-0.5"
+              >
+                {home.cta}
+                <ArrowRight className="size-4" aria-hidden="true" />
+              </Link>
+            </Reveal>
+            <div className="hidden lg:block" />
+          </div>
         </div>
       </section>
 
